@@ -35,9 +35,9 @@ function Navbar(props) {
           </div>
         </div>
         {toggle && (
-          <div className="absolute text-end justify-end items-end cursor-pointer top-20 left-0 w-full bg-[#0f0f0f] z-50 flex flex-col px-5 py-5">
+          <div className="absolute text-end justify-end items-end cursor-pointer mr-[20px] rounded-lg top-20 right-0  bg-[#0f0f0f] z-50 flex flex-col px-5 py-5">
             <Navigation type={type} />
-            <div className="text-sm font-normal text-[#bfbfbf] mr-[20px]">
+            <div className="text-sm font-normal text-[#bfbfbf] mr-[10px]">
               <p className="pt-[11px] pb-[22px]">Search</p>
               <p>Notifications</p>
             </div>
