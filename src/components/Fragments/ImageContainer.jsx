@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import mergeImages from "merge-images";
 import GlobalApi from "../Services/GlobalApi";
+import Watermark from "../Elements/Logo/Watermark";
+import Button from "../Elements/Button/Button";
 
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original";
 
 function ImageContainer() {
-  const [mergedImage, setMergedImage] = useState(null);
   const [movieList, setMovieList] = useState([]);
   const elementRef = React.useRef(null);
 
@@ -25,16 +25,6 @@ function ImageContainer() {
       console.error("Error fetching popular movies:", error);
     }
   };
-
-
-  useEffect(() => {
-    mergeImages([
-      { src: "/images/image1.svg", x: 105, y: 100, width: 60, height: 60 },
-      { src: "/images/image2.svg", x: 0, y: 0, width: 30, height: 30 },
-    ])
-      .then((b64) => setMergedImage(b64))
-      .catch((err) => console.error("Error merging images: ", err));
-  }, []);
 
   return (
     <div className="absolute left-0 w-full h-auto flex-col justify-start items-center inline-flex">
@@ -58,16 +48,8 @@ function ImageContainer() {
         </div>
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#141414] to-transparent pointer-events-none z-5" />
         <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-transparent  to-[#141414] to-[85%] pointer-events-none z-5" />
-        <div className="">
-          <div className=" left-[482px] top-[190px] absolute">
-            {mergedImage && (
-              <img
-                src={mergedImage}
-                alt="Merged Icon"
-                className="w-[300px] h-[300px]"
-              />
-            )}
-          </div>
+        <div>
+         <Watermark/>
         </div>
       </div>
       <div className="absolute bottom-0 self-stretch h-[237px] px-[150px] flex-col justify-start items-center gap-10 flex">
@@ -84,14 +66,7 @@ function ImageContainer() {
             content you want to watch.
           </div>
         </div>
-        <div className="px-6 py-3.5 bg-[#e50000] rounded-lg justify-start items-center gap-1 inline-flex">
-          <div className="w-6 h-6 relative">
-            <img src="/images/play.svg" alt="" />
-          </div>
-          <div className="text-white text-sm font-semibold font-['Manrope'] leading-[21px]">
-            Start Watching Now
-          </div>
-        </div>
+        <Button variant="bg-[#e50000] ">Start Watching Now</Button>
       </div>
     </div>
   );

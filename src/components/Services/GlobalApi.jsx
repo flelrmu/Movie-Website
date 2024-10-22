@@ -11,7 +11,12 @@ const getPopularMovies = (page = 1) => {
   return axios.get(MovieBaseUrl + "/movie/popular?api_key=" + api_key + "&page=" + page);
 };
 
+const getMoviesByGenre = (genreId, page = 1) => {
+  return axios.get(MovieBaseUrl + `/discover/movie?api_key=${api_key}&with_genres=${genreId}&page=${page}`);
+};
+
 export default {
   getTrendingVideos,
   getPopularMovies,
+  getMoviesByGenre,
 };

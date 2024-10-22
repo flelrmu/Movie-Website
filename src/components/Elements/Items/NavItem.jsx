@@ -41,7 +41,7 @@ function NavItem() {
           className={`px-[8px] py-3 rounded-lg cursor-pointer 
             ${
               location.pathname === item.link || active === item.id
-                ? "bg-[#1a1a1a] px-[21px] text-white font-medium"
+                ? "bg-[#1a1a1a] px-[20px] text-white font-medium"
                 : "text-[#bfbfbf]"
             }`}
         >
