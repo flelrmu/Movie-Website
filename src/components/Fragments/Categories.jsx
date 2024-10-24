@@ -5,24 +5,24 @@ const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original";
 
 const categories = [
   {
-    "id": 28,
-    "name": "Action",
+    id: 28,
+    name: "Action",
   },
   {
-    "id": 12,
-    "name": "Adventure",
+    id: 12,
+    name: "Adventure",
   },
   {
-    "id": 35,
-    "name": "Comedy",
+    id: 35,
+    name: "Comedy",
   },
   {
-    "id": 18,
-    "name": "Drama",
+    id: 18,
+    name: "Drama",
   },
   {
-    "id": 27,
-    "name": "Horror",
+    id: 27,
+    name: "Horror",
   },
 ];
 
@@ -35,16 +35,20 @@ function Categories() {
         .then((response) => {
           setCategoryMovies((prevMovies) => ({
             ...prevMovies,
-            [category.id]: response.data.results.slice(0, 4), 
+            [category.id]: response.data.results.slice(0, 4),
           }));
         })
-        .catch((error) => console.error(`Error fetching movies for genre ${category.name}:`, error));
+        .catch((error) =>
+          console.error(
+            `Error fetching movies for genre ${category.name}:`,
+            error
+          )
+        );
     });
   }, []);
 
-
   return (
-    <div className="h-[418px] w-full px-10 top-[975px] absolute flex-col justify-start items-start gap-[60px] inline-flex">
+    <div className="h-[418px] w-full px-10 top-[970px] absolute flex-col justify-start items-start gap-[60px] inline-flex">
       <div className="self-stretch justify-start items-end gap-20 inline-flex">
         <div className="grow shrink basis-0 flex-col justify-start items-start gap-2.5 inline-flex">
           <div className="self-stretch text-white text-[28px] font-bold font-['Manrope'] leading-[42px]">
@@ -69,17 +73,20 @@ function Categories() {
           </div>
           <div className="p-2.5 bg-[#1a1a1a] rounded-md border border-[#1e1e1e] justify-start items-start gap-2.5 flex">
             <div className="w-6 h-6 relative">
-            <img src="/images/right.svg" alt="" />
+              <img src="/images/right.svg" alt="" />
             </div>
           </div>
         </div>
       </div>
       <div className="w-full self-stretch justify-start items-start gap-5 inline-flex">
-      {categories.map((category) => (
-          <div key={category.id} className="p-6 bg-[#1a1a1a] rounded-[10px] border border-neutral-800 flex-col justify-start items-start inline-flex">
+        {categories.map((category) => (
+          <div
+            key={category.id}
+            className="p-6 bg-[#1a1a1a] rounded-[10px] border border-neutral-800 flex-col justify-start items-start inline-flex"
+          >
             <div className="self-stretch h-[180px] w-[171px] flex-col justify-start items-start gap-[5px] flex">
               <div className="self-stretch h-44 grid grid-cols-2 grid-rows-2 gap-[5px]">
-                 {categoryMovies[category.id]?.map((movie) => (
+                {categoryMovies[category.id]?.map((movie) => (
                   <img
                     key={movie.id}
                     src={IMAGE_BASE_URL + movie.poster_path}
@@ -95,7 +102,7 @@ function Categories() {
                 {category.name}
               </div>
               <div className="w-6 h-6 relative">
-              <img src="/images/right-arrow.svg" alt="" />
+                <img src="/images/right-arrow.svg" alt="" />
               </div>
             </div>
           </div>
