@@ -37,10 +37,10 @@ function DeviceContainer() {
   return (
     <div className="w-full absolute px-10 top-[1508px] h-[640px] flex-col justify-start items-start gap-[60px] inline-flex">
       <div className="self-stretch h-[100px] pr-[150px] flex-col justify-start items-start gap-2.5 flex">
-        <div className="self-stretch text-white text-[28px] font-bold font-['Manrope'] leading-[42px]">
+        <div className="self-stretch text-white text-[28px] font-bold leading-[42px]">
           We Provide you streaming experience across various devices.
         </div>
-        <div className="self-stretch text-[#999999] text-base font-normal font-['Manrope'] leading-normal">
+        <div className="self-stretch text-[#999999] text-base font-normal leading-normal">
           With StreamVibe, you can enjoy your favorite movies and TV shows
           anytime, anywhere. Our platform is designed to be compatible with a
           wide range of devices, ensuring that you never miss a moment of
@@ -62,11 +62,11 @@ function DeviceContainer() {
                   />
                 </div>
               </div>
-              <div className="text-white text-xl font-semibold font-['Manrope'] leading-[30px]">
+              <div className="text-white text-xl font-semibold leading-[30px]">
                 {device.name}
               </div>
             </div>
-            <div className=" text-[#999999] text-[14px] font-['Manrope'] leading-normal">
+            <div className=" text-[#999999] text-[14px] leading-normal">
               StreamVibe is optimized for both Android and iOS smartphones.
               Download our app from the Google Play Store or the Apple App Store
             </div>

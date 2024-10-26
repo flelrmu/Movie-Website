@@ -51,10 +51,10 @@ function Categories() {
     <div className="h-[418px] w-full px-10 top-[970px] absolute flex-col justify-start items-start gap-[60px] inline-flex">
       <div className="self-stretch justify-start items-end gap-20 inline-flex">
         <div className="grow shrink basis-0 flex-col justify-start items-start gap-2.5 inline-flex">
-          <div className="self-stretch text-white text-[28px] font-bold font-['Manrope'] leading-[42px]">
+          <div className="self-stretch text-white text-[28px] font-bold leading-[42px]">
             Explore our wide variety of categories
           </div>
-          <div className="self-stretch text-[#999999] text-base font-normal font-['Manrope'] leading-normal">
+          <div className="self-stretch text-[#999999] text-base font-normal leading-normal">
             Whether you're looking for a comedy to make you laugh, a drama to
             make you think, or a documentary to learn something new
           </div>
@@ -98,7 +98,7 @@ function Categories() {
               <div className="h-[180px] w-[171px] absolute bg-gradient-to-b from-transparent  to-[#1a1a1a] z-10" />
             </div>
             <div className="self-stretch justify-start items-center inline-flex">
-              <div className="grow shrink basis-0 text-white text-base font-semibold font-['Manrope'] leading-normal">
+              <div className="grow shrink basis-0 text-white text-base font-semibold leading-normal">
                 {category.name}
               </div>
               <div className="w-6 h-6 relative">

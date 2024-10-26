@@ -54,10 +54,10 @@ function ImageContainer() {
       </div>
       <div className="absolute bottom-0 self-stretch h-[237px] px-[150px] flex-col justify-start items-center gap-10 flex">
         <div className="self-stretch h-[145px] flex-col justify-start items-start gap-2.5 flex">
-          <div className="self-stretch text-center text-white text-5xl font-bold font-['Manrope'] leading-[72px]">
+          <div className="self-stretch text-center text-white text-5xl font-bold leading-[72px]">
             The Best Streaming Experience
           </div>
-          <div className="self-stretch text-center text-[#999999] text-sm font-normal font-['Manrope'] leading-[21px]">
+          <div className="self-stretch text-center text-[#999999] text-sm font-normal leading-[21px]">
             StreamVibe is the best streaming experience for watching your
             favorite movies and shows on demand, anytime, anywhere. With
             StreamVibe, you can enjoy a wide variety of content, including the

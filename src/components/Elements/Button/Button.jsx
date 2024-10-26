@@ -9,7 +9,7 @@ function Button(props) {
   } = props;
   return (
     <button
-      className={`px-6 py-3.5 ${variant} rounded-lg justify-start items-center gap-1 inline-flex text-white text-sm font-semibold font-['Manrope'] leading-[21px]`}
+      className={`px-6 py-3.5 ${variant} rounded-lg justify-start items-center gap-1 inline-flex text-white text-sm font-semibold leading-[21px]`}
       type={type}
       onClick={() => onClick()}
     >
