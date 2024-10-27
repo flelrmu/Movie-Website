@@ -1,25 +1,23 @@
 import React from "react";
 import FaqItems from "../Elements/Items/FaqItems";
 import FaqText from "../Elements/Items/FaqText";
+import ContainerDescriptions from "../Elements/Items/containerDescriptions";
+import ContainerTitle from "../Elements/Items/ContainerTitle";
+import Button2 from "../Elements/Button/Button2";
 
 function FaqSection() {
   return (
     <div className="w-full absolute px-10 top-[2256px] h-[582px] flex-col justify-start items-center gap-[60px] inline-flex">
       <div className="self-stretch justify-start items-end gap-20 inline-flex">
         <div className="grow shrink basis-0 flex-col justify-start items-start gap-2.5 inline-flex">
-          <div className="self-stretch text-white text-[28px] font-bold leading-[42px]">
-            Frequently Asked Questions
-          </div>
-          <div className="self-stretch text-[#999999] text-base font-normal leading-normal">
+          <ContainerTitle>Frequently Asked Questions</ContainerTitle>
+          <ContainerDescriptions>
+            {" "}
             Got questions? We've got answers! Check out our FAQ section to find
             answers to the most common questions about StreamVibe.
-          </div>
+          </ContainerDescriptions>
         </div>
-        <div className="px-5 py-3.5 bg-[#e50000] rounded-md justify-start items-start gap-2.5 flex">
-          <div className="text-white text-sm font-semibold leading-[21px]">
-            Ask a Question
-          </div>
-        </div>
+        <Button2 variant="bg-[#e50000]">Ask a Question</Button2>
       </div>
       <div className="self-stretch justify-start items-start gap-10 inline-flex">
         <div className="grow shrink basis-0 flex-col justify-start items-start inline-flex">

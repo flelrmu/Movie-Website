@@ -1,4 +1,6 @@
 import React from "react";
+import ContainerTitle from "../Elements/Items/ContainerTitle";
+import ContainerDescriptions from "../Elements/Items/containerDescriptions";
 
 const devices = [
   {
@@ -37,15 +39,15 @@ function DeviceContainer() {
   return (
     <div className="w-full absolute px-10 top-[1508px] h-[640px] flex-col justify-start items-start gap-[60px] inline-flex">
       <div className="self-stretch h-[100px] pr-[150px] flex-col justify-start items-start gap-2.5 flex">
-        <div className="self-stretch text-white text-[28px] font-bold leading-[42px]">
+        <ContainerTitle>
           We Provide you streaming experience across various devices.
-        </div>
-        <div className="self-stretch text-[#999999] text-base font-normal leading-normal">
+        </ContainerTitle>
+        <ContainerDescriptions>
           With StreamVibe, you can enjoy your favorite movies and TV shows
           anytime, anywhere. Our platform is designed to be compatible with a
           wide range of devices, ensuring that you never miss a moment of
           entertainment.
-        </div>
+        </ContainerDescriptions>
       </div>
       <div className="self-stretch grid grid-cols-3 grid-rows-2 gap-5">
         {devices.map((device) => (
@@ -56,10 +58,7 @@ function DeviceContainer() {
             <div className="self-stretch justify-start items-center gap-3 inline-flex">
               <div className="p-3 bg-[#141414] rounded-[10px] border border-[#1e1e1e] justify-start items-start gap-2.5 flex">
                 <div className="w-[30px] h-[30px] justify-center items-center flex">
-                  <img
-                    className="w-full h-full"
-                    src={device.image}
-                  />
+                  <img className="w-full h-full" src={device.image} />
                 </div>
               </div>
               <div className="text-white text-xl font-semibold leading-[30px]">

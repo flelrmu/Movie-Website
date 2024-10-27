@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import GlobalApi from "../Services/GlobalApi";
+import ContainerDescriptions from "../Elements/Items/containerDescriptions";
+import ContainerTitle from "../Elements/Items/ContainerTitle";
 
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original";
 
@@ -51,13 +53,13 @@ function Categories() {
     <div className="h-[418px] w-full px-10 top-[970px] absolute flex-col justify-start items-start gap-[60px] inline-flex">
       <div className="self-stretch justify-start items-end gap-20 inline-flex">
         <div className="grow shrink basis-0 flex-col justify-start items-start gap-2.5 inline-flex">
-          <div className="self-stretch text-white text-[28px] font-bold leading-[42px]">
+          <ContainerTitle>
             Explore our wide variety of categories
-          </div>
-          <div className="self-stretch text-[#999999] text-base font-normal leading-normal">
+          </ContainerTitle>
+          <ContainerDescriptions>
             Whether you're looking for a comedy to make you laugh, a drama to
             make you think, or a documentary to learn something new
-          </div>
+          </ContainerDescriptions>
         </div>
         <div className="p-3 bg-[#0f0f0f] rounded-[10px] border border-[#1e1e1e] justify-start items-center gap-3 flex">
           <div className="p-2.5 bg-[#1a1a1a] rounded-md border border-[#1e1e1e] justify-start items-start gap-2.5 flex">
