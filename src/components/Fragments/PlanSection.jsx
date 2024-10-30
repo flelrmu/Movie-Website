@@ -1,6 +1,7 @@
 import React from "react";
 import ContainerDescriptions from "../Elements/Items/containerDescriptions";
 import ContainerTitle from "../Elements/Items/ContainerTitle";
+import Button2 from "../Elements/Button/Button2";
 
 const plans = [
   {
@@ -76,11 +77,7 @@ function PlanSection() {
                   Start Free Trial
                 </div>
               </div>
-              <div className="grow shrink basis-0 h-[49px] px-5 py-3.5 bg-[#e50000] rounded-md justify-center items-center gap-2.5 flex">
-                <div className="text-white text-sm font-semibold font-['Manrope'] leading-[21px]">
-                  Choose Plan
-                </div>
-              </div>
+              <Button2 variant="bg-[#e50000] px-[30px]">Choose Plan</Button2>
             </div>
           </div>
         ))}
