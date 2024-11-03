@@ -5,6 +5,7 @@ import Categories from "../components/Fragments/Categories";
 import DeviceContainer from "../components/Fragments/DeviceContainer";
 import FaqSection from "../components/Fragments/FaqSection";
 import PlanSection from "../components/Fragments/PlanSection";
+import TrialSection from "../components/Fragments/TrialSection";
 
 function HomePage() {
   return (
@@ -15,6 +16,7 @@ function HomePage() {
       <DeviceContainer />
       <FaqSection />
       <PlanSection />
+      <TrialSection />
     </>
   );
 }
