@@ -22,7 +22,11 @@ function ImageContainer() {
         ...responsePage2.data.results,
       ];
 
-      setMovieList(allMovies.slice(0, 36));
+      const displayMovies =
+        window.innerWidth < 768
+          ? allMovies.slice(0, 12)
+          : allMovies.slice(0, 36);
+      setMovieList(displayMovies);
     } catch (error) {
       console.error("Error fetching popular movies:", error);
     }
@@ -37,22 +41,26 @@ function ImageContainer() {
         />
         <div
           ref={elementRef}
-          className="absolute self-stretch grid grid-cols-9 grid-rows-4 gap-4"
+          className="absolute self-stretch grid md:grid-cols-9 grid-cols-3 grid-rows-4  gap-4"
         >
           {movieList.map((item) => (
             <img
               key={item.id}
               src={IMAGE_BASE_URL + item.poster_path}
               alt={item.title || "Movie Poster"}
-              className="w-full h-full object-cover rounded-xl"
+              className="w-full md:aspect-[2/3] aspect-[3/3] object-cover rounded-xl"
             />
           ))}
         </div>
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#141414] to-transparent pointer-events-none z-5" />
-        <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-transparent  to-[#141414] to-[85%] pointer-events-none z-5" />
-        <div className="md:w-[300px] w-[200px] h-[200px] md:h-[300px]  absolute">
-          <div className="md:w-[280px] md:h-[280px] w-[200px] h-[200px] md:top-[192px] top-[131px]  md:left-[492px] left-[141px] absolute">
-            <img className="md:w-[280px] md:h-[280px] w-[200px] h-[200px]" src="images/AbstractDesign.png" alt="" />
+        <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-[#141414] to-[85%] pointer-events-none z-5" />
+        <div className="md:w-[300px] w-[200px] h-[200px] md:h-[300px] absolute">
+          <div className="md:w-[280px] md:h-[280px] w-[200px] h-[200px] md:top-[192px] top-[160px] md:left-[492px] left-[141px] absolute">
+            <img
+              className="md:w-[280px] md:h-[280px] w-[200px] h-[200px]"
+              src="images/AbstractDesign.png"
+              alt=""
+            />
           </div>
         </div>
       </div>

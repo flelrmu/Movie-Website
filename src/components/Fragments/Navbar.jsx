@@ -10,7 +10,7 @@ function Navbar(props) {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="z-50 fixed w-full h-[80px] md:px-10 px-5 py-6 justify-between items-center inline-flex">
+    <div className="z-50 fixed w-full my-[29px] md:my-[10px] h-[80px] md:px-10 px-5 py-6 justify-between items-center inline-flex">
       <div>
         <Link
           to="/home"
@@ -49,23 +49,14 @@ function Navbar(props) {
 }
 
 const Navigation = ({ type }) => {
-
   if (type === "home") {
-    return (
-      <NavItem/>
-    );
+    return <NavItem />;
   } else if (type === "movies") {
-    return (
-      <NavItem/>
-    );
+    return <NavItem />;
   } else if (type === "support") {
-    return (
-      <NavItem/>
-    );
+    return <NavItem />;
   } else {
-    return (
-      <NavItem/>
-    );
+    return <NavItem />;
   }
 };
 

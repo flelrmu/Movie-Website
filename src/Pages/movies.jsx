@@ -1,10 +1,14 @@
-import React from 'react'
-import Navbar from '../components/Fragments/Navbar'
+import React from "react";
+import Navbar from "../components/Fragments/Navbar";
+import MoviesSlider from "../components/Fragments/MoviesSlider";
 
 function MoviesPage() {
   return (
-    <Navbar type="movies"/>
-  )
+    <>
+      <Navbar type="movies" />
+      <MoviesSlider />
+    </>
+  );
 }
 
-export default MoviesPage
+export default MoviesPage;

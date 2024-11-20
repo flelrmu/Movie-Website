@@ -15,7 +15,7 @@ function Logo() {
 
   return (
     <>
-      <div className="w-[35px] md:w-[40px] h-[35px] md:h-[40px] relative flex-col justify-center items-center flex">
+      <div className="w-[40px] md:w-[45px] h-[35px] md:h-[40px] relative flex-col justify-center items-center flex">
         {mergedImage && (
           <img
             src={mergedImage}
@@ -24,7 +24,7 @@ function Logo() {
           />
         )}
       </div>
-      <div className="w-[60px] md:w-[80px]">
+      <div className="w-[65px] md:w-[85px]">
         <img src="/images/StreamVibe.svg" alt="StreamVibe" />
       </div>
     </>
