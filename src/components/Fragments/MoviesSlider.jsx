@@ -96,13 +96,13 @@ function MoviesSlider() {
         <div className="flex justify-center gap-4 mt-4">
           <Button>Play Now</Button>
           <button className="p-3 bg-[#0f0f0f] rounded-lg border border-neutral-800">
-            <img src="/images/plus.svg" alt="Add" />
+            <img src="images/plus.svg" alt="Add" />
           </button>
           <button className="p-3 bg-[#0f0f0f] rounded-lg border border-neutral-800">
-            <img src="/images/thumb.svg" alt="Like" />
+            <img src="images/thumb.svg" alt="Like" />
           </button>
           <button className="p-3 bg-[#0f0f0f] rounded-lg border border-neutral-800">
-            <img src="/images/sound.svg" alt="Sound" />
+            <img src="images/sound.svg" alt="Sound" />
           </button>
         </div>
       </div>
@@ -112,7 +112,7 @@ function MoviesSlider() {
           onClick={sliderLeft}
           className="p-3 bg-[#0f0f0f] rounded-lg border border-neutral-800"
         >
-          <img src="/images/left.svg" alt="Left" />
+          <img src="images/left.svg" alt="Left" />
         </button>
         <div className="h-1 flex gap-[3px] items-center">
           {movieList.map((_, index) => (
@@ -128,7 +128,7 @@ function MoviesSlider() {
           onClick={sliderRight}
           className="p-3 bg-[#0f0f0f] rounded-lg border border-neutral-800"
         >
-          <img src="/images/right.svg" alt="Right" />
+          <img src="images/right.svg" alt="Right" />
         </button>
       </div>
     </div>

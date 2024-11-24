@@ -9,29 +9,29 @@ import MoviesPage from "./Pages/movies.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Movie-Website/",
     element: <HomePage />,
   },
   {
-    path: "/home",
+    path: "/Movie-Website/home",
     element: <HomePage />,
   },
   {
-    path: "/movies",
+    path: "/Movie-Website/movies",
     element: <MoviesPage />,
   },
   {
-    path: "/support",
+    path: "/Movie-Website/support",
     element: <SupportPage />,
   },
   {
-    path: "/subscriptions",
+    path: "/Movie-Website/subscriptions",
     element: <SubscriptionsPage />,
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router} basePath="/Movie-Website/"/>
   </StrictMode>
 );

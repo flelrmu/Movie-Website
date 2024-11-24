@@ -14,22 +14,22 @@ function NavItem() {
     {
       id: 1,
       name: "Home",
-      link: "/home",
+      link: "/Movie-Website/home",
     },
     {
       id: 2,
       name: "Movies & Shows",
-      link: "/movies",
+      link: "/Movie-Website/movies",
     },
     {
       id: 3,
       name: "Support",
-      link: "/support",
+      link: "/Movie-Website/support",
     },
     {
       id: 4,
       name: "Subscriptions",
-      link: "/subscriptions",
+      link: "/Movie-Website/subscriptions",
     },
   ];
   return (

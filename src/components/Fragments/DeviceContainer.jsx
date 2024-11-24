@@ -6,32 +6,32 @@ const devices = [
   {
     id: 1,
     name: "Smartphone",
-    image: "/images/smartphone.svg",
+    image: "images/smartphone.svg",
   },
   {
     id: 2,
     name: "Tablet",
-    image: "/images/tablet.svg",
+    image: "images/tablet.svg",
   },
   {
     id: 3,
     name: "Smart TV",
-    image: "/images/smartTv.svg",
+    image: "images/smartTv.svg",
   },
   {
     id: 4,
     name: "Laptops",
-    image: "/images/laptop.svg",
+    image: "images/laptop.svg",
   },
   {
     id: 5,
     name: "Gaming Consoles",
-    image: "/images/consoles.svg",
+    image: "images/consoles.svg",
   },
   {
     id: 6,
     name: "VR Headsets",
-    image: "/images/vr.svg",
+    image: "images/vr.svg",
   },
 ];
 

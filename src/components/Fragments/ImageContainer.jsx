@@ -37,7 +37,7 @@ function ImageContainer() {
       <div className="self-stretch h-auto flex-col justify-start items-start gap-2.5 flex">
         <img
           className="w-full object-cover h-[810px] mix-blend-overlay rounded-xl"
-          src="/images/Image.png"
+          src="images/Image.png"
         />
         <div
           ref={elementRef}

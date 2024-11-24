@@ -64,17 +64,17 @@ function Footer() {
           <div className="justify-start items-start gap-2.5 inline-flex">
             <div className="p-3 bg-[#1a1a1a] rounded-md border border-neutral-800 justify-start items-start gap-2.5 flex">
               <div className="w-5 h-5 relative">
-                <img src="/images/facebook.svg" alt="" />
+                <img src="images/facebook.svg" alt="" />
               </div>
             </div>
             <div className="p-3 bg-[#1a1a1a] rounded-md border border-neutral-800 justify-start items-start gap-2.5 flex">
               <div className="w-5 h-5 relative">
-                <img src="/images/x.svg" alt="" />
+                <img src="images/x.svg" alt="" />
               </div>
             </div>
             <div className="p-3 bg-[#1a1a1a] rounded-md border border-neutral-800 justify-start items-start gap-2.5 flex">
               <div className="w-5 h-5 relative">
-                <img src="/images/Linkedin.svg" alt="" />
+                <img src="images/Linkedin.svg" alt="" />
               </div>
             </div>
           </div>

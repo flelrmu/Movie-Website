@@ -6,8 +6,8 @@ function Logo() {
 
   useEffect(() => {
     mergeImages([
-      { src: "/images/icon.svg", x: 20, y: 20, width: 60, height: 60 },
-      { src: "/images/vector.svg", x: 0, y: 0, width: 30, height: 30 },
+      { src: "images/icon.svg", x: 20, y: 20, width: 60, height: 60 },
+      { src: "images/vector.svg", x: 0, y: 0, width: 30, height: 30 },
     ])
       .then((b64) => setMergedImage(b64))
       .catch((err) => console.error("Error merging images: ", err));
@@ -25,7 +25,7 @@ function Logo() {
         )}
       </div>
       <div className="w-[65px] md:w-[85px]">
-        <img src="/images/StreamVibe.svg" alt="StreamVibe" />
+        <img src="images/StreamVibe.svg" alt="StreamVibe" />
       </div>
     </>
   );

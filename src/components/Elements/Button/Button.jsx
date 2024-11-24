@@ -14,7 +14,7 @@ function Button(props) {
       onClick={() => onClick()}
     >
       <div className="w-6 h-6 relative">
-        <img src="/images/play.svg" alt="" />
+        <img src="images/play.svg" alt="" />
       </div>
       {children}
     </button>

@@ -13,7 +13,7 @@ function Navbar(props) {
     <div className="z-50 fixed w-full my-[29px] md:my-[10px] h-[80px] md:px-10 px-5 py-6 justify-between items-center inline-flex">
       <div>
         <Link
-          to="/home"
+          to="/Movie-Website/home"
           className="w-[120px] h-[60px] justify-start items-center gap-[3px] inline-flex"
         >
           <Logo />

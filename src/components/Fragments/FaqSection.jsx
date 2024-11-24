@@ -33,7 +33,7 @@ function FaqSection() {
               </div>
             </div>
             <div className="w-6 h-6 relative">
-              <img src="/images/min.svg" alt="" />
+              <img src="images/min.svg" alt="" />
             </div>
           </div>
           <div className="self-stretch h-[1px] bg-gradient-to-r from-transparent via-[#e50000] via-[30%] to-transparent to-[100%]" />
