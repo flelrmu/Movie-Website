@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom"; // Import useNavigate
+import { useLocation, useNavigate } from "react-router-dom";
 
 function NavItem() {
   const location = useLocation();
-  const navigate = useNavigate(); // Inisialisasi navigate
+  const navigate = useNavigate();
   const [active, setActive] = useState(null);
 
   const handleClick = (id, link) => {
-    setActive(id); // Menandai item yang aktif
-    navigate(link); // Navigasi menggunakan useNavigate
+    setActive(id);
+    navigate(link);
   };
 
   const item = [
@@ -39,7 +39,7 @@ function NavItem() {
       {item.map((item) => (
         <div
           key={item.id}
-          onClick={() => handleClick(item.id, item.link)} // Tidak perlu event
+          onClick={() => handleClick(item.id, item.link)} 
           className={`px-[16px] py-3 rounded-lg cursor-pointer 
             ${location.pathname === item.link || active === item.id
               ? "bg-[#1a1a1a] px-[16px] text-white font-medium"

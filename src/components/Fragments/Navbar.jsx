@@ -20,7 +20,6 @@ function Navbar(props) {
         </Link>
       </div>
 
-      {/* Navigation for larger screens */}
       <div className="xl:flex justify-center items-center hidden flex-grow">
         <div className="px-[8px] py-2 bg-[#0f0f0f] rounded-[10px] border-2 border-[#1e1e1e] justify-center items-center flex">
           <Navigation type={type} />
