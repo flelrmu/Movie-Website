@@ -82,7 +82,7 @@ function Genres({ variant = "default" }) {
               {category.name}
             </div>
             <div className="w-6 h-6 relative">
-              <img src="/images/right-arrow.svg" alt="" />
+              <img src="images/right.svg" alt="" />
             </div>
           </div>
         </div>

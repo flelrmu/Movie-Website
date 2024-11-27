@@ -11,7 +11,7 @@ function Navbar(props) {
 
   return (
     <div className="z-50 fixed w-full my-[29px] md:my-[10px] h-[80px] md:px-10 px-5 py-6 justify-between items-center inline-flex">
-      <div>
+      <div className="fixed">
         <Link
           to="/Movie-Website/home"
           className="w-[120px] h-[60px] justify-start items-center gap-[3px] inline-flex"
@@ -19,12 +19,17 @@ function Navbar(props) {
           <Logo />
         </Link>
       </div>
-      <div className="xl:flex gap-[325px] hidden">
-        <div className="px-[8px] py-2 bg-[#0f0f0f] rounded-[10px] border-2 border-[#1e1e1e] justify-start items-center flex">
+
+      {/* Navigation for larger screens */}
+      <div className="xl:flex justify-center items-center hidden flex-grow">
+        <div className="px-[8px] py-2 bg-[#0f0f0f] rounded-[10px] border-2 border-[#1e1e1e] justify-center items-center flex">
           <Navigation type={type} />
         </div>
+      </div>
+      <div className="xl:flex absolute xl:right-[40px] hidden">
         <IconNavbar />
       </div>
+
       <div className="xl:hidden flex justify-between items-center w-full">
         <div className="bg-[#1a1a1a] ml-auto px-[12px] py-[12px] rounded-md border-2 border-neutral-800  ">
           <div className="">
