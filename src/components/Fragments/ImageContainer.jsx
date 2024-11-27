@@ -36,7 +36,7 @@ function ImageContainer() {
     <div className="absolute left-0 w-full h-auto flex-col justify-start items-center inline-flex">
       <div className="self-stretch h-auto flex-col justify-start items-start gap-2.5 flex">
         <img
-          className="w-full object-cover h-[810px] mix-blend-overlay rounded-xl"
+          className="w-full object-cover h-[820px] mix-blend-overlay rounded-xl"
           src="images/Image.png"
         />
         <div
@@ -54,14 +54,12 @@ function ImageContainer() {
         </div>
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#141414] to-transparent pointer-events-none z-5" />
         <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-[#141414] to-[85%] pointer-events-none z-5" />
-        <div className="md:w-[300px] w-[200px] h-[200px] md:h-[300px] absolute">
-          <div className="md:w-[280px] md:h-[280px] w-[200px] h-[200px] md:top-[192px] top-[160px] md:left-[492px] left-[141px] absolute">
-            <img
-              className="md:w-[280px] md:h-[280px] w-[200px] h-[200px]"
-              src="images/AbstractDesign.png"
-              alt=""
-            />
-          </div>
+        <div className="absolute inset-0 flex justify-center md:top-[192px] top-[160px] z-10">
+          <img
+            className="md:w-[280px] md:h-[280px] w-[200px] h-[200px] max-w-full max-h-full"
+            src="images/AbstractDesign.png"
+            alt="Abstract Design"
+          />
         </div>
       </div>
       <div className="absolute bottom-0 self-stretch h-[237px] md:px-[150px] flex-col justify-start items-center md:gap-10 gap-[120px] flex">

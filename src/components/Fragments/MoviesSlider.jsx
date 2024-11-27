@@ -63,7 +63,7 @@ function MoviesSlider() {
         ref={elementRef}
         className="w-full h-full flex overflow-x-auto gap-5 rounded-xl border border-neutral-800 scrollbar-hide"
       >
-        {movieList.map((item, index) => (
+        {movieList.map((item) => (
           <div
             key={item.id}
             className="relative min-w-full h-full flex-shrink-0"

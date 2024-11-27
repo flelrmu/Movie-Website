@@ -19,13 +19,13 @@ function Navbar(props) {
           <Logo />
         </Link>
       </div>
-      <div className="md:flex gap-[325px] hidden">
+      <div className="xl:flex gap-[325px] hidden">
         <div className="px-[8px] py-2 bg-[#0f0f0f] rounded-[10px] border-2 border-[#1e1e1e] justify-start items-center flex">
           <Navigation type={type} />
         </div>
         <IconNavbar />
       </div>
-      <div className="md:hidden flex justify-between items-center w-full">
+      <div className="xl:hidden flex justify-between items-center w-full">
         <div className="bg-[#1a1a1a] ml-auto px-[12px] py-[12px] rounded-md border-2 border-neutral-800  ">
           <div className="">
             <FiAlignRight
@@ -35,7 +35,7 @@ function Navbar(props) {
           </div>
         </div>
         {toggle && (
-          <div className="absolute text-end justify-end items-end cursor-pointer mr-[20px] rounded-lg top-20 right-0  bg-[#0f0f0f] z-50 flex flex-col px-5 py-5">
+          <div className="absolute text-end justify-end items-end cursor-pointer mr-[20px] rounded-lg top-20 right-0  bg-[#0f0f0f] z-50  flex flex-col px-5 py-5">
             <Navigation type={type} />
             <div className="text-sm font-normal text-[#bfbfbf] mr-[10px]">
               <p className="pt-[11px] pb-[22px]">Search</p>

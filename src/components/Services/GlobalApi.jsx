@@ -15,8 +15,29 @@ const getMoviesByGenre = (genreId, page = 1) => {
   return axios.get(MovieBaseUrl + `/discover/movie?api_key=${api_key}&with_genres=${genreId}&page=${page}`);
 };
 
+const getUpcomingMovies = (page = 1) => {
+  return axios.get(MovieBaseUrl + `/movie/upcoming?api_key=${api_key}&page=${page}`);
+};
+
+const getTopRatedMovies = (page = 1) => {
+  return axios.get(MovieBaseUrl + `/movie/top_rated?api_key=${api_key}&page=${page}`);
+};
+
+const getMovieDetails = (movieId) => {
+  return axios.get(`${MovieBaseUrl}/movie/${movieId}?api_key=${api_key}`);
+};
+
+const getMovieRecommendations = (movieId) => {
+  return axios.get(`${MovieBaseUrl}/movie/${movieId}/recommendations?api_key=${api_key}`);
+};
+
+
 export default {
   getTrendingVideos,
   getPopularMovies,
   getMoviesByGenre,
+  getUpcomingMovies,
+  getTopRatedMovies,
+  getMovieDetails,
+  getMovieRecommendations,
 };
