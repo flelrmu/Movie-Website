@@ -1,7 +1,12 @@
 import axios from "axios";
 
 const MovieBaseUrl = "https://api.themoviedb.org/3";
+const ReqresBaseUrl = "https://reqres.in/api";
 const api_key = "a0f5e889d2655c451db7b1de39c0ef89";
+
+const loginUser = (email, password) => {
+  return axios.post(`${ReqresBaseUrl}/login`, { email, password });
+};
 
 const getTrendingVideos = () => {
   return axios.get(MovieBaseUrl + "/trending/all/day?api_key=" + api_key);
@@ -33,6 +38,7 @@ const getMovieRecommendations = (movieId) => {
 
 
 export default {
+  loginUser,
   getTrendingVideos,
   getPopularMovies,
   getMoviesByGenre,
