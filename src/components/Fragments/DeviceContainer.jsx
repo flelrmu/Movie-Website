@@ -37,7 +37,7 @@ const devices = [
 
 function DeviceContainer() {
   return (
-    <div className="w-full absolute px-10 top-[1508px] h-[640px] flex-col justify-start items-start gap-[60px] inline-flex">
+    <div className="w-full px-10 mb-[120px] h-auto flex-col justify-start items-start gap-[60px] inline-flex">
       <div className="self-stretch h-[100px] pr-[150px] flex-col justify-start items-start gap-2.5 flex">
         <ContainerTitle>
           We Provide you streaming experience across various devices.

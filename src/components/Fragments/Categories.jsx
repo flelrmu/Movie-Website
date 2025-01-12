@@ -6,7 +6,7 @@ import ArrowButton from "../Elements/Button/ArrowButton";
 
 function Categories() {
   return (
-    <div className="h-[418px] w-full px-10 top-[970px] absolute flex-col justify-start items-start gap-[60px] inline-flex">
+    <div className="h-auto mt-[68px] mb-[120px] w-full px-10  flex-col justify-start items-start gap-[60px] inline-flex">
       <div className="self-stretch justify-start items-end gap-20 inline-flex">
         <div className="grow shrink basis-0 flex-col justify-start items-start gap-2.5 inline-flex">
           <ContainerTitle>

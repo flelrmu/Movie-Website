@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/Fragments/Navbar'
+import Navbar from '../../components/Fragments/Navbar'
 
 function SupportPage() {
   return (

@@ -30,7 +30,7 @@ const items = [
 
 function Footer() {
   return (
-    <div className="w-full absolute top-[3947px] h-[414px] px-20 pt-20 pb-10 bg-[#0f0f0f] flex-col justify-start items-start gap-20 inline-flex">
+    <div className="w-full h-auto px-20 pt-20 pb-10 bg-[#0f0f0f] flex-col justify-start items-start gap-20 inline-flex">
       <div className="self-stretch justify-start items-start gap-5 grid grid-cols-6 grid-rows-1">
         {items.map((item) => (
           <div

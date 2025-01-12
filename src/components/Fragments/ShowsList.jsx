@@ -2,10 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button2 from "../Elements/Button/Button2";
 import ArrowButton from "../Elements/Button/ArrowButton";
+import ShowGenres from "../Elements/Items/ShowGenres";
+
 
 function ShowsList() {
   return (
-    <div className="w-full px-10 top-[3577px] absolute h-[2554px] flex-col justify-start items-start inline-flex">
+    <div className="w-full mb-[39px] px-10 h-auto flex-col justify-start items-start inline-flex">
       <div className="self-stretch absolute h-10 px-10 flex-col justify-start items-start gap-2.5 flex">
         <Link to="/Movie-Website/showsOpen">
           <Button2 variant="bg-[#e50000] absolute top-[-16px] py-[8px]">
@@ -21,7 +23,7 @@ function ShowsList() {
             </div>
             <ArrowButton />
           </div>
-          {/* genre */}
+          <ShowGenres variant="small" />
         </div>
         <div className="self-stretch h-[425px] flex-col justify-start items-start gap-10 flex">
           <div className="self-stretch justify-start items-center gap-[100px] inline-flex">

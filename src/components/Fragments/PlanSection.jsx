@@ -26,7 +26,7 @@ const plans = [
 
 function PlanSection() {
   return (
-    <div className="w-full absolute px-10 top-[2965px] h-[505px] flex-col justify-start items-start gap-[60px] inline-flex">
+    <div className="w-full px-10 mb-[39px] h-auto flex-col justify-start items-start gap-[60px] inline-flex">
       <div className="self-stretch justify-start items-end gap-20 inline-flex">
         <div className="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-2.5 inline-flex">
           <ContainerTitle>Choose the plan that's right for you</ContainerTitle>

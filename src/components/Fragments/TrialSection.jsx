@@ -29,14 +29,14 @@ function TrialSection() {
   };
 
   return (
-    <div className="w-full absolute top-[3592px] px-10 h-[236px] py-20 flex justify-center items-center">
+    <div className="w-full px-10 mb-[39px] h-auto py-20 flex justify-center items-center">
       <div className="w-full rounded-xl border border-neutral-800 relative overflow-hidden bg-[#0f0f0f]">
         <div className="absolute h-[285px] inset-0 z-0 flex overflow-hidden">
           <div
             ref={elementRef}
             className="w-full grid grid-cols-9 grid-rows-4 gap-5"
             style={{
-              marginTop: '-50px',
+              marginTop: "-50px",
             }}
           >
             {movieList.map((item, index) => (
@@ -49,9 +49,9 @@ function TrialSection() {
             ))}
           </div>
         </div>
-        <div className="absolute inset-0 z-10 bg-[#e50000] opacity-50 rounded-xl"/>
-        
-        <div className="absolute inset-0 z-30 bg-gradient-to-r from-[#0f0f0f] from-[15%] via-transparent to-transparent rounded-xl"/>
+        <div className="absolute inset-0 z-10 bg-[#e50000] opacity-50 rounded-xl" />
+
+        <div className="absolute inset-0 z-30 bg-gradient-to-r from-[#0f0f0f] from-[15%] via-transparent to-transparent rounded-xl" />
 
         <div className="relative z-40 px-[60px] py-[80px] flex justify-between items-center">
           <div>

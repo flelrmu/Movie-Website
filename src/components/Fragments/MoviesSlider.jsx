@@ -58,7 +58,7 @@ function MoviesSlider() {
   };
 
   return (
-    <div className="absolute w-full h-[709px] top-[98px] px-10 pt-10 pb-4 flex-col justify-end items-center gap-10 inline-flex overflow-hidden">
+    <div className=" w-full h-[709px] mb-[100px] px-10 pt-[141px] pb-4 flex-col justify-end items-center gap-10 inline-flex overflow-hidden">
       <div
         ref={elementRef}
         className="w-full h-full flex overflow-x-auto gap-5 rounded-xl border border-neutral-800 scrollbar-hide"
@@ -82,7 +82,7 @@ function MoviesSlider() {
         ))}
       </div>
 
-      <div className="absolute bottom-32 justify-center z-20 text-left text-white">
+      <div className="absolute bottom-11 justify-center z-20 text-left text-white">
         <h1 className="text-4xl text-center font-bold">
           {movieList[activeIndex]
             ? movieList[activeIndex].title || movieList[activeIndex].name
@@ -107,7 +107,7 @@ function MoviesSlider() {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-0 right-0 z-20 flex justify-between items-center px-20">
+      <div className="absolute pb-[16px] left-0 right-0 z-20 flex justify-between items-center px-20">
         <button
           onClick={sliderLeft}
           className="p-3 bg-[#0f0f0f] rounded-lg border border-neutral-800"

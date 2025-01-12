@@ -20,6 +20,10 @@ const getMoviesByGenre = (genreId, page = 1) => {
   return axios.get(MovieBaseUrl + `/discover/movie?api_key=${api_key}&with_genres=${genreId}&page=${page}`);
 };
 
+const getShowsByGenre = (genreId, page = 1) => {
+  return axios.get(MovieBaseUrl + `/discover/tv?api_key=${api_key}&with_genres=${genreId}&page=${page}`);
+};
+
 const getUpcomingMovies = (page = 1) => {
   return axios.get(MovieBaseUrl + `/movie/upcoming?api_key=${api_key}&page=${page}`);
 };
@@ -46,4 +50,5 @@ export default {
   getTopRatedMovies,
   getMovieDetails,
   getMovieRecommendations,
+  getShowsByGenre,
 };

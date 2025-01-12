@@ -10,7 +10,7 @@ import MustWatch from "../Elements/Items/MustWatch";
 
 function MoviesList() {
   return (
-    <div className="w-full px-10 top-[907px] absolute h-[2554px] flex-col justify-start items-start inline-flex">
+    <div className="w-full mb-[138px] px-10 h-auto flex-col justify-start items-start inline-flex">
       <div className="self-stretch absolute h-10 px-10 flex-col justify-start items-start gap-2.5 flex">
         <Link to="/Movie-Website/moviesOpen">
           <Button2 variant="bg-[#e50000] absolute top-[-16px] py-[8px]">

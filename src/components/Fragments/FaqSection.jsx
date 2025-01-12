@@ -7,7 +7,7 @@ import Button2 from "../Elements/Button/Button2";
 
 function FaqSection() {
   return (
-    <div className="w-full absolute px-10 top-[2256px] h-[582px] flex-col justify-start items-center gap-[60px] inline-flex">
+    <div className="w-full px-10 mb-[120px] h-auto flex-col justify-start items-center gap-[60px] inline-flex">
       <div className="self-stretch justify-start items-end gap-20 inline-flex">
         <div className="grow shrink basis-0 flex-col justify-start items-start gap-2.5 inline-flex">
           <ContainerTitle>Frequently Asked Questions</ContainerTitle>

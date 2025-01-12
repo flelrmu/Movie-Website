@@ -4,14 +4,14 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { UserProvider } from "./components/context/UserContext";
-import HomePage from "./Pages/home.jsx";
-import SubscriptionsPage from "./Pages/subscriptions.jsx";
-import SupportPage from "./Pages/support.jsx";
-import MoviesPage from "./Pages/movies.jsx";
-import LoginPage from "./Pages/login.jsx";
-import MoviesOpenPage from "./Pages/moviesOpen.jsx";
-import ShowsOpenPage from "./Pages/showsOpen.jsx";
-import ErrorPage from "./Pages/error.jsx";
+import HomePage from "./Pages/Movies/home.jsx";
+import SubscriptionsPage from "./Pages/Movies/subscriptions.jsx";
+import SupportPage from "./Pages/Movies/support.jsx";
+import MoviesPage from "./Pages/Movies/movies.jsx";
+import LoginPage from "./Pages/Auth/login.jsx";
+import MoviesOpenPage from "./Pages/Movies/moviesOpen.jsx";
+import ShowsOpenPage from "./Pages/Movies/showsOpen.jsx";
+import ErrorPage from "./Pages/Error/error.jsx";
 
 const router = createBrowserRouter([
   {
