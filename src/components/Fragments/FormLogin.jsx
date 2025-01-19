@@ -3,21 +3,21 @@ import { useNavigate } from "react-router-dom";
 import Button2 from "../Elements/Button/Button2";
 import InputForm from "../Elements/Input/Index";
 import GlobalApi from "../Services/GlobalApi";
-import { UserContext } from "../context/UserContext";
-import { ClipLoader } from "react-spinners"; // Import spinner
+import { UserContext } from "../Context/UserContext";
+import { ClipLoader } from "react-spinners";
 
 function FormLogin() {
   const navigate = useNavigate();
   const { setUser } = useContext(UserContext);
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // State untuk status login
-  const [isLoading, setIsLoading] = useState(false); // State untuk tombol loading
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleLogin = async (event) => {
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;
 
-    setIsLoading(true); // Tampilkan loading spinner
+    setIsLoading(true);
 
     try {
       const response = await GlobalApi.loginUser(email, password);
@@ -25,7 +25,7 @@ function FormLogin() {
         const user = { email, token: response.data.token };
         setUser(user);
         localStorage.setItem("user", JSON.stringify(user));
-        setIsLoggedIn(true); // Tandai user berhasil login
+        setIsLoggedIn(true);
         navigate("/Movie-Website/home");
       } else {
         alert("Login failed!");
@@ -33,7 +33,7 @@ function FormLogin() {
     } catch (error) {
       alert("Invalid email or password!");
     } finally {
-      setIsLoading(false); // Sembunyikan loading spinner
+      setIsLoading(false);
     }
   };
 
@@ -59,10 +59,10 @@ function FormLogin() {
             isLoggedIn ? "opacity-50 cursor-not-allowed" : ""
           }`}
           type="submit"
-          disabled={isLoggedIn || isLoading} // Disabled jika login berhasil atau sedang loading
+          disabled={isLoggedIn || isLoading}
         >
           {isLoading ? (
-            <ClipLoader color="#ffffff" size={20} /> // Spinner saat loading
+            <ClipLoader color="#ffffff" size={20} />
           ) : (
             "Login"
           )}

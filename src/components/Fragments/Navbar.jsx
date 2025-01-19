@@ -5,7 +5,7 @@ import Logo from "../Elements/Logo/Logo";
 import IconNavbar from "../Elements/Logo/IconNavbar";
 import NavItem from "../Elements/Items/NavItem";
 import Button2 from "../Elements/Button/Button2";
-import { UserContext } from "../context/UserContext";
+import { UserContext } from "../Context/UserContext";
 
 function Navbar(props) {
   const { type } = props;
